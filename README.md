@@ -9,7 +9,7 @@ a very customizable modal based on react and styled-components
  # constructor(props) {
   #  super(props);
    # this.state = {
-    #  modal: false
+     modal: false
    # }
  # }
 
@@ -17,8 +17,8 @@ a very customizable modal based on react and styled-components
   # hideModal = () => this.setState({ modal: false })
 
  # render() {
-  #  return (
-      `<Modal isVisible={this.state.modal}
+ # return (
+      <Modal isVisible={this.state.modal}
             isVisible={boolean value for modal visibility}
             onClose={a function to close the modal visibility},
             maskStyle={a style object for the background overlay component}
@@ -35,9 +35,9 @@ a very customizable modal based on react and styled-components
             closeButtonStyle={a style object}
          >
           your content here
-      </Modal>`
+      </Modal>
   # )
  # }
-#}
+}
 
 export default TestModal;`

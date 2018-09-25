@@ -1,30 +1,31 @@
 # react-beautiful-modal
 a very customizable modal based on react and styled-components
 
-import React, { Component } from 'react';
-import Modal from 'react-beautiful-modal';
 
-class TestModal extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      modal: false
-    }
-  }
+# import React, { Component } from 'react';
+# import Modal from 'react-beautiful-modal';
 
-  showModal = () => this.setState({ modal: true })
-  hideModal = () => this.setState({ modal: false })
+# class TestModal extends Component {
+ # constructor(props) {
+  #  super(props);
+   # this.state = {
+    #  modal: false
+   # }
+ # }
 
-  render() {
-    return (
-        <Modal isVisible={this.state.modal}
-          isVisible={boolean value for modal visibility}
-          onClose={a function to close the modal visibility},
-          maskStyle={a style object for the background overlay component}
-          modalContainerStyle={a style object for the container that hold all the modal}
-          footerStyle={a style object for the footer container}
-          modalBodyStyle={a style object for the you modal content}
-          hasFooter={boolean value for footer visibility}
+ # showModal = () => this.setState({ modal: true })
+  # hideModal = () => this.setState({ modal: false })
+
+ # render() {
+  #  return (
+   #     <Modal isVisible={this.state.modal}
+    #      isVisible={boolean value for modal visibility}
+     #     onClose={a function to close the modal visibility},
+      #    maskStyle={a style object for the background overlay component}
+       #   modalContainerStyle={a style object for the container that hold all the modal}
+        #  footerStyle={a style object for the footer container}
+         # modalBodyStyle={a style object for the you modal content}
+          # hasFooter={boolean value for footer visibility}
           children={your content}
           cancelText={a text for cancel button}
           title={modal title text || react node element}
@@ -39,4 +40,4 @@ class TestModal extends Component {
   }
 }
 
-export default TestModal;
+export default TestModal;`

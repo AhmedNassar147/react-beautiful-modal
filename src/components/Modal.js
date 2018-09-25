@@ -97,7 +97,6 @@ const Modal = ({
   okayText,
   appearance,
   onOkay,
-  onCancel,
   closeButtonStyle
 }) => {
   return (
@@ -121,7 +120,7 @@ const Modal = ({
 
         {hasFooter ? (
           <ModalFooter style={footerStyle}>
-            <FooterButton onClick={onCancel || onClose} children={cancelText} />
+            <FooterButton onClick={onClose} children={cancelText} />
             <FooterButton onClick={onOkay} children={okayText} />
           </ModalFooter>
         ) : null}
@@ -142,7 +141,6 @@ Modal.propTypes = {
   isVisible: PropTypes.bool,
   onClose: PropTypes.func,
   onOkay: PropTypes.func,
-  onCancel: PropTypes.func,
   maskStyle: PropTypes.object,
   modalBodyStyle: PropTypes.object,
   modalContainerStyle: PropTypes.object,
